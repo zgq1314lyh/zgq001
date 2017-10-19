@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>git笔记</title>
+		<style type="text/css">
+		 ol{
+		 	width:100%;
+		 	height:80%;
+		 }
+			 ol>li{
+			 	width:90%;
+			 	font-size: 20px;
+			 	height:40px;
+			 	background: pink;
+			 	line-height: 40px;
+			 	text-indent: 1em;
+			 	margin-bottom: 4px;
+			 }
+		</style>
+	</head>
+<body>
+		<ol>
+			<h2>git知识点</h2>
+			<h3>各种命令</h3>
+			<li>git init ：创建git库</li>
+			<li>git config --global user.name "wang" 设置名字</li>
+			<li>git config --global user.email 1425150127@qq.com" 设置邮箱</li>
+			<li>git add -A /index.html 添加到暂存区</li>
+			<li>git commit -m "项目" 添加到git库里</li>
+			<li>git status 查看当前状态</li>
+			<li>git log 日志查看</li>
+			<li>git clone 克隆</li>
+			<li>git reset --hard +id</li>
+			<li>git reflog 查看之前的版本信息</li>
+			<li>git checkout --index.html 撤销</li>
+			<li>git remote add origin +地址（在克隆地址那复制地址）关联远程库</li>
+			<li>git push -u origin master 推送到github （-u第一次添加，第二次就不用了）上传</li>
+			<li>git branch name创建分支</li>
+			<li>git checkout name 切换到分支</li>
+			<li>git checkout -b 创建分支并切换</li>
+			<li>git branch -d name 删除分支</li>
+			<li>git merge name合并分支</li>
+		</ol>
+		<h3>bash常见命令</h3>
+		<p>pwd (Print Working Directory) 查看当前目录</p>
+		<p>cd (Change Directory) 切换目录，如 cd /etc</p>
+		<p>ls (List) 查看当前目录下内容，如 ls -al</p>
+		<p>mkdir (Make Directory) 创建目录，如 mkdir blog</p>
+		<p>touch 创建文件，如 touch index.html</p>
+		<p>cat 查看文件全部内容，如 cat index.html</p>
+		<p>more/less 查看文件，如more /etc/passwd、less /etc/passwd</p>
+		<p>rm (remove) 删除文件，如 rm index.html、rm -rf  blog</p>
+		<p>rmdir (Remove Directory) 删除文件夹，只能删除空文件夹，不常用</p>
+		<p>mv (move) 移动文件或重命名，如 mv index.html ./demo/index.html</p>
+		<p>cp (copy) 复制文件，cp index.html ./demo/index.html</p>
+		<p>head 查看文件前几行，如 head -5 index.html</p>
+		<p>tail 查看文件后几行 –n –f，如 tail index.html、tail -f -n 5 index.html </p>
+		<p>tab 自动补全，连按两次会将所有匹配内容显示出来</p>
+		<p>history 查看操作历史</p>
+		<p>> 和 >>重定向，如echo hello world! > README.md，>覆盖 >>追加
+		wget 下载，如wget https://nodejs.org/dist/v4.4.0/node-v4.4.0.tar.gz</p>
+		<p>tar 解压缩，如tar zxvf node-v4.4.0.tar.gz</p>
+		<p>curl 网络请求，如curl http://www.baidu.com</p>
+		<p>whoami 查看当前用户
+		| 管道符可以将多个命令连接使用，上一次（命令）的执行结果当成下一次（命令）的参数。
+		grep 匹配内容，一般结合管道符使用
+		</p>
+		
+</body>
+</html>
