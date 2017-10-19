@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页牛</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="插件/rem/rem1.js"></script>
+		<script src="插件/bootStrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="插件/bootStrap/css/bootstrap.min.css"/>
+		<script src="插件/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="插件/swiper/swiper.min.css"/>
+		<script src="插件/bootStrap/js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<!--导航-->
+		<div id="nav">
+			<span class="glyphicon glyphicon-search"></span>
+			<input type="search" placeholder="搜索今日最近推荐"/>
+		</div>
+		<!--轮播-->
+		<div class="swiper-container" id="banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="素材/barent.png" alt=""/>
+				</div>
+				<div class="swiper-slide">
+					<img src="素材/barent.png" alt=""/>
+				</div>
+				<div class="swiper-slide">
+					<img src="素材/barent.png" alt=""/>
+				</div>
+				<div class="swiper-slide">
+					<img src="素材/barent.png" alt=""/>
+				</div>
+			</div>
+			<!--分页器-->
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<!--主体-->
+		<div id="zt">
+			<figure>
+				<img src="素材/index_07.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_09.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_11.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_13.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_15.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_22.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/index_23.png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/牛_30 (1).png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/牛_30 (2).png" alt=""/>
+				<p>美食</p>
+			</figure>
+			<figure>
+				<img src="素材/牛_30 (3).png" alt=""/>
+				<p>美食</p>
+			</figure>
+		</div>
+		
+		<!--热门菜谱-->
+		<div id="rmcp">
+			<div>
+				<p>——— 热门菜谱	  BEST ———</p> 
+			</div>
+			<div>
+				<img src="素材/index_27.png" alt=""/>
+				<h3>红烧排骨</h3>
+				<p>啊斯洛伐克金坷垃神经分裂就算金坷垃神经分裂就算了房间看了就罚款垃圾焚烧圾焚烧</p>
+			</div>
+			<div>
+				<img src="素材/index_30.png" alt=""/>
+				<h3>蔬菜拉面</h3>
+				<p>啊斯洛伐克金坷垃神经分裂就伐克金坷垃神经分裂就算房间看了就罚款垃圾焚烧</p>
+			</div>
+		</div>
+		
+		<!--为你优选-->
+		<div id="wntj">
+			<p>——— 为你推荐	  BEST ———</p> 
+			<img src="素材/index_32.png" alt=""/>
+			<img src="素材/index_34.png" alt=""/>
+			<img src="素材/index_36.png" alt=""/>
+		</div>
+		
+		<!--底部-->
+		<div id="footer">
+			<figure class="bgColor">
+				<img src="素材/footer_03.png" alt=""/>
+				<p>首页</p>
+			</figure>
+			<figure>
+				<img src="素材/footer_05.png" alt=""/>
+				<p>发现</p>
+			</figure>
+			<figure>
+				<img src="素材/footer_07.png" alt=""/>
+				<p>视频</p>
+			</figure>
+			<figure>
+				<img src="素材/footer_09.png" alt=""/>
+				<p>社区</p>
+			</figure>
+			<figure>
+				<img src="素材/footer_11.png" alt=""/>
+				<p>我的</p>
+			</figure>
+		</div>
+		<script type="text/javascript">
+			var swiper = new Swiper("#banner",{
+				autoplay:2000,
+				loop:true,
+				pagination:".swiper-pagination"
+			})
+			
+			$("#footer figure").click(function(){
+				$(this).addClass("bgColor").siblings().removeClass("bgColor")
+			})
+		</script>
+	</body>
+</html>
